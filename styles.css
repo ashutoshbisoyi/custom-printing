@@ -97,6 +97,7 @@ nav img.logo {
   padding-top: 2em;
 }
 .team h2,
+.quote h2,
 .about .content h2 {
   position: relative;
   padding-bottom: 0.5em;
@@ -105,13 +106,14 @@ nav img.logo {
   margin-bottom: 1.2em;
 }
 .team h2::after,
+.quote h2::after,
 .about .content h2::after {
   content: '';
   display: block;
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 20%;
+  width: 100px;
   height: 5px;
   background-color: var(--primary-color);
 }
@@ -202,6 +204,7 @@ section.products {
   align-items: center;
 }
 .clients .client-card img {
+  width: 80px;
   filter: grayscale(5);
   transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -243,6 +246,8 @@ section.products {
   margin-bottom: 2em;
 }
 .gallery img {
+  max-width: 100%;
+  max-height: 280px;
   margin-bottom: 1.3em;
   border-radius: 8px;
   box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
@@ -326,7 +331,14 @@ footer ul.contact li img {
 .copyright ul li img {
   width: 60%;
 }
-
+/* quote  */
+.quote h2 {
+  color: var(--primary-color);
+  margin-bottom: 2em;
+}
+.required {
+  color: #e02c2b;
+}
 /* ----------- mobile design --------------- */
 /* ----------------------------------- */
 @media (max-width: 576px) {
